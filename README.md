@@ -1,6 +1,6 @@
 # D4SG_新竹縣環保局-便利資訊看板
 
-<iframe width="560" height="315" src="https://goo.gl/81wqnm" frameborder="0" allowfullscreen></iframe>
+<iframe width="1024" height="768" src="https://goo.gl/81wqnm" frameborder="0" allowfullscreen></iframe>
 
 ## 資料來源
 * 行政院環境保護署 環境資源資料開放平台(https://opendata.epa.gov.tw/)

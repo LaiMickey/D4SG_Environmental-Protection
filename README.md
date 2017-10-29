@@ -15,3 +15,9 @@
 
 ## 資料處理步驟
 <img src="./資料處理流程圖.jpg" width="100%" />
+### Step1. 處理好環保署開放資料後，取出公司名稱，至透明足跡爬取相關資訊(Use R)
+```
+url_front <- "https://thaubing.gcaa.org.tw/envmap?facility_name=&corp_id=&industry_name=All&poltype=All&factory_fine=1&id_2=All&page=0&qt-front_content=1&facility_name="
+url_end <- "&corp_id=&industry_name=All&poltype=All&factory_fine=1&id_2=All"
+get_url <- paste0(url_front, "公司名稱", url_end)
+```

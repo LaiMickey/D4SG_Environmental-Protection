@@ -14,6 +14,7 @@
 * 股票網站
 
 ## 資料處理步驟
+##### 爬網時請控制程式執行頻率，不要影響目標網站正常營運!!!
 <img src="./資料處理流程圖.jpg" width="100%" />
 ### Step1. 處理好環保署開放資料後，取出公司名稱，至透明足跡爬取相關資訊(Use R)
 
@@ -99,4 +100,6 @@ print(df)</code></pre>
 ##   Case_Status_Desc Sus_App_Date Sus_Beg_Date Sus_End_Date
 ## 1</code></pre>
 ##### 註：Capital_Stock_Amount：資本總額(元)；Paid_In_Capital_Amount：實收資本額(元)
+
+### Step3. 利用公司完整名稱整併"公司名稱&股票代號對照表.txt"，取得公司統編後，至股票網站爬取財報資訊(Use Python)
 

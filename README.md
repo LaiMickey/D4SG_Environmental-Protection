@@ -98,6 +98,5 @@ print(df)</code></pre>
 ## 1            0940819                 1061026                            
 ##   Case_Status_Desc Sus_App_Date Sus_Beg_Date Sus_End_Date
 ## 1</code></pre>
-
-##### Capital_Stock_Amount：資本總額(元)；Paid_In_Capital_Amount：實收資本額(元)
+##### 註：Capital_Stock_Amount：資本總額(元)；Paid_In_Capital_Amount：實收資本額(元)
 

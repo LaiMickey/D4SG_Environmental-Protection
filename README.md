@@ -1,9 +1,9 @@
 # [D4SG_新竹縣環保局-便利資訊看板](https://laimickey.github.io/D4SG_Environmental-Protection/)
 
-## 當天簡報
+## 當天簡報(https://www.slideshare.net/MickeyLai2/d4sg-81315677)
 <iframe width="1024" height="768" src="https://www.slideshare.net/MickeyLai2/d4sg-81315677" frameborder="0" allowfullscreen></iframe>
 
-## Power BI
+## Power BI(https://goo.gl/81wqnm)
 <iframe width="1024" height="768" src="https://goo.gl/81wqnm" frameborder="0" allowfullscreen></iframe>
 
 ## 資料來源

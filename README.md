@@ -13,5 +13,5 @@
 * 公司名稱&股票代號對照表(D4SG_Environmental-Protection/公司名稱&股票代號對照表.txt)
 * 股票網站
 
-## 處理步驟
-<img src="./爬網流程.png" width="100%" />
+## 資料處理步驟
+<img src="./資料處理流程圖.jpg" width="100%" />

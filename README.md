@@ -42,3 +42,5 @@
 <span class="identifier">target_path</span> <span class="operator">&lt;-</span> <span class="identifier">regexp</span><span class="paren">(</span><span class="identifier">paste0</span><span class="paren">(</span><span class="string">'&lt;div class=\"views-field views-field-facility-name factory-name\"&gt;&lt;span class=\"field-content\"&gt;&lt;a href=\".+\"&gt;'</span>, <span class="string">"峻源股份有限公司"</span>, <span class="string">'&lt;/a&gt;'</span><span class="paren">)</span>, <span class="identifier">web_content</span><span class="paren">)</span>
 
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">target_path</span><span class="paren">)</span></code></pre>
+
+<pre><code>## [1] "/facility/J5604458"</code></pre>

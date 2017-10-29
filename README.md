@@ -75,3 +75,29 @@ snap_date &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text
 print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))</code></pre>
 <pre><code>## [1] &quot;公司統編:27873415;公司名稱:峻源股份有限公司;公司地址:新竹縣關西鎮南新里新城１之１、１之７號&quot;</code></pre>
 
+
+### Step2. 利用自透明足跡爬取之公司統編，至政府資料開放平台爬取公司完整資訊(Use R)
+##### 註:政府資料開放平台有提供API介接申請，有需要大量爬取資料者記得事先申請喔~~
+<pre class="r"><code>library(jsonlite)
+
+URL &lt;- paste(&quot;http://data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?$format=json&amp;$filter=Business_Accounting_NO%20eq%20&quot;, corp_id, sep=&quot;&quot;)
+corp_content &lt;- readLines(URL, encoding = &quot;UTF-8&quot;)</code></pre>
+<pre><code>## Warning in readLines(URL, encoding = &quot;UTF-8&quot;): 於 'http://
+## data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?
+## $format=json&amp;$filter=Business_Accounting_NO%20eq%2027873415' 找到不完整的最
+## 後一列</code></pre>
+<pre class="r"><code>df &lt;- fromJSON(corp_content)
+
+print(df)</code></pre>
+<pre><code>##   Business_Accounting_NO Company_Status_Desc     Company_Name
+## 1               27873415            核准設立 峻源股份有限公司
+##   Capital_Stock_Amount Paid_In_Capital_Amount Responsible_Name
+## 1             75550000               75550000            喻O芫
+##                  Company_Location Register_Organization_Desc
+## 1 新竹縣關西鎮南新里9鄰新城1之1號           經濟部中部辦公室
+##   Company_Setup_Date Change_Of_Approval_Data Revoke_App_Date Case_Status
+## 1            0940819                 1061026                            
+##   Case_Status_Desc Sus_App_Date Sus_Beg_Date Sus_End_Date
+## 1</code></pre>
+
+

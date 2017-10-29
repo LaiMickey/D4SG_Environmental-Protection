@@ -44,3 +44,34 @@
 <span class="identifier">print</span><span class="paren">(</span><span class="identifier">target_path</span><span class="paren">)</span></code></pre>
 
 <pre><code>## [1] "/facility/J5604458"</code></pre>
+
+<pre class="r"><code>dns &lt;- &quot;https://thaubing.gcaa.org.tw&quot;
+target_url &lt;- paste0(dns, target_path)
+
+## 開始針對目標公司爬取資料
+tmp &lt;- read_html(target_url, encoding = &quot;UTF-8&quot;)
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-corp-id')
+corp_id &lt;- web_content %&gt;% html_nodes('a') %&gt;% html_text()
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-facility-name')
+corp_name &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-facility-address')
+address &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-industry-area-name')
+industry_area &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-industry-name')
+industry &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-poltype')
+apply_type &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+  
+web_content &lt;- tmp %&gt;% html_nodes('.views-field-updatetime')
+snap_date &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
+
+print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))</code></pre>
+<pre><code>## [1] &quot;公司統編:27873415;公司名稱:峻源股份有限公司;公司地址:新竹縣關西鎮南新里新城１之１、１之７號&quot;</code></pre>
+

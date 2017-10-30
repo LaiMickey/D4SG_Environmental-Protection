@@ -102,3 +102,46 @@ print(df)</code></pre>
 
 ### Step3. 利用公司完整名稱整併"公司名稱&股票代號對照表.txt"，取得公司統編後，至股票網站爬取財報資訊(Use Python)
 此部分需透過Selenium套件實現，完整程式碼請參考"stock_scrawler.py"
+
+#### 準備事項
+在開始使用python爬蟲前，要先安裝好下列相關套件及WebDriver。
+```bash
+pip3 install selenium pandas
+# for MacOS
+brew install geckodriver
+```
+> [Selenium](http://www.seleniumhq.org/) 為瀏覽器的自動化工具，可以自動化模擬瀏覽器進行動作，多用於直接操作瀏覽器進行自動化測試，此次藉由瀏覽器操作抓取股票網站的資料。
+
+> [Pandas](https://pandas.pydata.org/index.html) 為處理數據資料的套件，擅長處理一維數據及二維的表格數據, 可以直接讀取多種格式(HTML, csv, excel, json...)，轉換乘DataFrame，進行資料處理。
+
+#### 開始爬蟲
+```python
+from selenium import webdriver
+import pandas as pd
+
+driver = webdriver.Firefox()      # Open the Firefox browser
+driver.set_page_load_timeout(10)  # Set the longest loading time for each page
+
+# Read 公司名稱&股票代號對照表.txt
+with open('./stock_list.txt', 'r') as fin:
+    company_code_list = fin.read().split("\n")
+    for company_code in company_code_list:
+        # Assign the URL of target page to url variable
+        url = "http://www.cmoney.tw/finance/f00041.aspx?s=" \
+        + company_code.strip()
+        # Let browser GET the page
+        driver.get(url)
+        # Use css selector to get the elements whose class is "tb-out"
+        table = driver.find_element_by_css_selector(".tb-out")
+        # Use pandas to read table and convert it to DataFrame
+        df = pd.read_html(table.get_attribute('innerHTML'))
+        # Write out the DataFrame as csv file to stock_table/ folder
+        df[0].to_csv('stock_table/'+company_code+'.csv', index=False)
+```
+程式執行完成後，即可以在./stock_table看見如下的許多爬取資料的csv檔案
+.
+|____1102.csv
+|____1402.csv
+...
+|____8150.csv
+|____8421.csv

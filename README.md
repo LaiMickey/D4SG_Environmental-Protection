@@ -17,6 +17,34 @@
 <img src="./資料處理流程圖.jpg" width="100%" />
 ### Step1. 處理好環保署開放資料後，取出公司名稱，至透明足跡爬取相關資訊(Use R)
 
+```test
+library(RODBC)
+library(httr)
+
+regexp <- function(pattern, data, idx=1L, is.split=FALSE, spt=NULL) {
+  text <- data[idx]
+  v <- regexpr(pattern, text)
+  n <- unlist(lapply(strsplit(pattern, "\\.\\+"), nchar))
+  out <- substr(text, v + n[1], v + attr(v,"match.length") - (n[2]+1))
+  if (is.split) unlist(strsplit(out, spt)) else out
+} # end regexp()
+
+
+## 組出爬網URL
+url_front <- "https://thaubing.gcaa.org.tw/envmap?facility_name=&corp_id=&industry_name=All&poltype=All&factory_fine=1&id_2=All&page=0&qt-front_content=1&facility_name="
+url_end <- "&corp_id=&industry_name=All&poltype=All&factory_fine=1&id_2=All"
+get_url <- paste0(url_front, "峻源股份有限公司", url_end)
+
+
+## 至透明足跡爬取資料=>先取得該公司在透明足跡網址
+html <- GET(get_url)
+web_content <- content(html, "text", encoding = "UTF-8")
+
+target_path <- regexp(paste0('<div class=\"views-field views-field-facility-name factory-name\"><span class=\"field-content\"><a href=\".+\">', "峻源股份有限公司", '</a>'), web_content)
+
+print(target_path)
+```
+
 <pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">RODBC</span><span class="paren">)</span>
 <span class="keyword">library</span><span class="paren">(</span><span class="identifier">httr</span><span class="paren">)</span>
 

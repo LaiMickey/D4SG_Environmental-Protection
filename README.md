@@ -17,6 +17,11 @@
 <img src="./資料處理流程圖.jpg" width="100%" />
 ### Step1. 處理好環保署開放資料後，取出公司名稱，至透明足跡爬取相關資訊(Use R)
 
+```r
+library(RODBC)
+print('123')
+```
+
 <pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">RODBC</span><span class="paren">)</span>
 <span class="keyword">library</span><span class="paren">(</span><span class="identifier">httr</span><span class="paren">)</span>
 

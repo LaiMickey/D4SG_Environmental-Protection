@@ -45,33 +45,38 @@ target_path <- regexp(paste0('<div class=\"views-field views-field-facility-name
 print(target_path)
 ```
 
-<pre class="r"><code class="r"><span class="keyword">library</span><span class="paren">(</span><span class="identifier">RODBC</span><span class="paren">)</span>
-<span class="keyword">library</span><span class="paren">(</span><span class="identifier">httr</span><span class="paren">)</span>
-
-<span class="identifier">regexp</span> <span class="operator">&lt;-</span> <span class="keyword">function</span><span class="paren">(</span><span class="identifier">pattern</span>, <span class="identifier">data</span>, <span class="identifier">idx</span><span class="operator">=</span><span class="number">1L</span>, <span class="identifier">is.split</span><span class="operator">=</span><span class="literal">FALSE</span>, <span class="identifier">spt</span><span class="operator">=</span><span class="literal">NULL</span><span class="paren">)</span> <span class="paren">{</span>
-  <span class="identifier">text</span> <span class="operator">&lt;-</span> <span class="identifier">data</span><span class="paren">[</span><span class="identifier">idx</span><span class="paren">]</span>
-  <span class="identifier">v</span> <span class="operator">&lt;-</span> <span class="identifier">regexpr</span><span class="paren">(</span><span class="identifier">pattern</span>, <span class="identifier">text</span><span class="paren">)</span>
-  <span class="identifier">n</span> <span class="operator">&lt;-</span> <span class="identifier">unlist</span><span class="paren">(</span><span class="identifier">lapply</span><span class="paren">(</span><span class="identifier">strsplit</span><span class="paren">(</span><span class="identifier">pattern</span>, <span class="string">"\\.\\+"</span><span class="paren">)</span>, <span class="identifier">nchar</span><span class="paren">)</span><span class="paren">)</span>
-  <span class="identifier">out</span> <span class="operator">&lt;-</span> <span class="identifier">substr</span><span class="paren">(</span><span class="identifier">text</span>, <span class="identifier">v</span> <span class="operator">+</span> <span class="identifier">n</span><span class="paren">[</span><span class="number">1</span><span class="paren">]</span>, <span class="identifier">v</span> <span class="operator">+</span> <span class="identifier">attr</span><span class="paren">(</span><span class="identifier">v</span>,<span class="string">"match.length"</span><span class="paren">)</span> <span class="operator">-</span> <span class="paren">(</span><span class="identifier">n</span><span class="paren">[</span><span class="number">2</span><span class="paren">]</span><span class="operator">+</span><span class="number">1</span><span class="paren">)</span><span class="paren">)</span>
-  <span class="keyword">if</span> <span class="paren">(</span><span class="identifier">is.split</span><span class="paren">)</span> <span class="identifier">unlist</span><span class="paren">(</span><span class="identifier">strsplit</span><span class="paren">(</span><span class="identifier">out</span>, <span class="identifier">spt</span><span class="paren">)</span><span class="paren">)</span> <span class="keyword">else</span> <span class="identifier">out</span>
-<span class="paren">}</span> <span class="comment"># end regexp()</span>
-
-
-<span class="comment">## 組出爬網URL</span>
-<span class="identifier">url_front</span> <span class="operator">&lt;-</span> <span class="string">"https://thaubing.gcaa.org.tw/envmap?facility_name=&amp;corp_id=&amp;industry_name=All&amp;poltype=All&amp;factory_fine=1&amp;id_2=All&amp;page=0&amp;qt-front_content=1&amp;facility_name="</span>
-<span class="identifier">url_end</span> <span class="operator">&lt;-</span> <span class="string">"&amp;corp_id=&amp;industry_name=All&amp;poltype=All&amp;factory_fine=1&amp;id_2=All"</span>
-<span class="identifier">get_url</span> <span class="operator">&lt;-</span> <span class="identifier">paste0</span><span class="paren">(</span><span class="identifier">url_front</span>, <span class="string">"峻源股份有限公司"</span>, <span class="identifier">url_end</span><span class="paren">)</span>
-
-
-<span class="comment">## 至透明足跡爬取資料=&gt;先取得該公司在透明足跡網址</span>
-<span class="identifier">html</span> <span class="operator">&lt;-</span> <span class="identifier">GET</span><span class="paren">(</span><span class="identifier">get_url</span><span class="paren">)</span>
-<span class="identifier">web_content</span> <span class="operator">&lt;-</span> <span class="identifier">content</span><span class="paren">(</span><span class="identifier">html</span>, <span class="string">"text"</span>, <span class="identifier">encoding</span> <span class="operator">=</span> <span class="string">"UTF-8"</span><span class="paren">)</span>
-
-<span class="identifier">target_path</span> <span class="operator">&lt;-</span> <span class="identifier">regexp</span><span class="paren">(</span><span class="identifier">paste0</span><span class="paren">(</span><span class="string">'&lt;div class=\"views-field views-field-facility-name factory-name\"&gt;&lt;span class=\"field-content\"&gt;&lt;a href=\".+\"&gt;'</span>, <span class="string">"峻源股份有限公司"</span>, <span class="string">'&lt;/a&gt;'</span><span class="paren">)</span>, <span class="identifier">web_content</span><span class="paren">)</span>
-
-<span class="identifier">print</span><span class="paren">(</span><span class="identifier">target_path</span><span class="paren">)</span></code></pre>
-
 <pre><code>## [1] "/facility/J5604458"</code></pre>
+
+```r
+dns <- "https://thaubing.gcaa.org.tw"
+target_url <- paste0(dns, target_path)
+
+## 開始針對目標公司爬取資料
+tmp <- read_html(target_url, encoding = "UTF-8")
+  
+web_content <- tmp %>% html_nodes('.views-field-corp-id')
+corp_id <- web_content %>% html_nodes('a') %>% html_text()
+  
+web_content <- tmp %>% html_nodes('.views-field-facility-name')
+corp_name <- web_content %>% html_nodes('.field-content') %>% html_text()
+  
+web_content <- tmp %>% html_nodes('.views-field-facility-address')
+address <- web_content %>% html_nodes('.field-content') %>% html_text()
+
+web_content <- tmp %>% html_nodes('.views-field-industry-area-name')
+industry_area <- web_content %>% html_nodes('.field-content') %>% html_text()
+  
+web_content <- tmp %>% html_nodes('.views-field-industry-name')
+industry <- web_content %>% html_nodes('.field-content') %>% html_text()
+  
+web_content <- tmp %>% html_nodes('.views-field-poltype')
+apply_type <- web_content %>% html_nodes('.field-content') %>% html_text()
+  
+web_content <- tmp %>% html_nodes('.views-field-updatetime')
+snap_date <- web_content %>% html_nodes('.field-content') %>% html_text()
+
+print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))
+```
 
 <pre class="r"><code>dns &lt;- &quot;https://thaubing.gcaa.org.tw&quot;
 target_url &lt;- paste0(dns, target_path)

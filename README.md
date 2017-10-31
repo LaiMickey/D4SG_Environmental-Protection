@@ -78,43 +78,16 @@ snap_date <- web_content %>% html_nodes('.field-content') %>% html_text()
 print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))
 ```
 
-<pre class="r"><code>dns &lt;- &quot;https://thaubing.gcaa.org.tw&quot;
-target_url &lt;- paste0(dns, target_path)
-
-## 開始針對目標公司爬取資料
-tmp &lt;- read_html(target_url, encoding = &quot;UTF-8&quot;)
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-corp-id')
-corp_id &lt;- web_content %&gt;% html_nodes('a') %&gt;% html_text()
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-facility-name')
-corp_name &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-facility-address')
-address &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-industry-area-name')
-industry_area &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-industry-name')
-industry &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-poltype')
-apply_type &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-  
-web_content &lt;- tmp %&gt;% html_nodes('.views-field-updatetime')
-snap_date &lt;- web_content %&gt;% html_nodes('.field-content') %&gt;% html_text()
-
-print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))</code></pre>
-<pre><code>## [1] &quot;公司統編:27873415;公司名稱:峻源股份有限公司;公司地址:新竹縣關西鎮南新里新城１之１、１之７號&quot;</code></pre>
-
-
 ### Step2. 利用自透明足跡爬取之公司統編，至政府資料開放平台爬取公司完整資訊(Use R)
-##### 註:政府資料開放平台有提供API介接申請，有需要大量爬取資料者記得事先申請喔~~
-<pre class="r"><code>library(jsonlite)
+##### 註:政府資料開放平台有提供API介接申請，有需要大量爬取資料者記得事先申請~~
 
-URL &lt;- paste(&quot;http://data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?$format=json&amp;$filter=Business_Accounting_NO%20eq%20&quot;, corp_id, sep=&quot;&quot;)
-corp_content &lt;- readLines(URL, encoding = &quot;UTF-8&quot;)</code></pre>
+```r
+library(jsonlite)
+
+URL <- paste("http://data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?$format=json&$filter=Business_Accounting_NO%20eq%20", corp_id, sep="")
+corp_content <- readLines(URL, encoding = "UTF-8")
+```
+
 <pre><code>## Warning in readLines(URL, encoding = &quot;UTF-8&quot;): 於 'http://
 ## data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?
 ## $format=json&amp;$filter=Business_Accounting_NO%20eq%2027873415' 找到不完整的最

@@ -94,8 +94,12 @@ corp_content <- readLines(URL, encoding = "UTF-8")
 ## data.gcis.nat.gov.tw/od/data/api/5F64D864-61CB-4D0D-8AD9-492047CC1EA6?
 ## $format=json&amp;$filter=Business_Accounting_NO%20eq%2027873415' 找到不完整的最
 ## 後一列</code></pre>
-<pre class="r"><code>df &lt;- fromJSON(corp_content)
-print(df)</code></pre>
+
+```r
+df <- fromJSON(corp_content)
+print(df)
+```
+
 <pre><code>##   Business_Accounting_NO Company_Status_Desc     Company_Name
 ## 1               27873415            核准設立 峻源股份有限公司
 ##   Capital_Stock_Amount Paid_In_Capital_Amount Responsible_Name

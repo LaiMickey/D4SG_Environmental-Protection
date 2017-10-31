@@ -78,6 +78,8 @@ snap_date <- web_content %>% html_nodes('.field-content') %>% html_text()
 print(paste0('公司統編:', corp_id, ';公司名稱:', corp_name, ';公司地址:', address))
 ```
 
+<pre><code>## [1] &quot;公司統編:27873415;公司名稱:峻源股份有限公司;公司地址:新竹縣關西鎮南新里新城１之１、１之７號&quot;</code></pre>
+
 ### Step2. 利用自透明足跡爬取之公司統編，至政府資料開放平台爬取公司完整資訊(Use R)
 ##### 註:政府資料開放平台有提供API介接申請，有需要大量爬取資料者記得事先申請~~
 

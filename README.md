@@ -20,60 +20,49 @@
   
 <p><img src="./Images/環保署基本資料.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'>乙、我們設計<b><span style='color:red'>以局處整體的角度思考設計三個頁面</span></b>，瞭解局處內部之裁處情形以及各公司裁處狀況。</p>
+<p>乙、我們設計<b><span style='color:red'>以局處整體的角度思考設計三個頁面</span></b>，瞭解局處內部之裁處情形以及各公司裁處狀況。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 i.&nbsp;
 各事業別TOP5裁罰公司</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。</p>
 
 <p><img src="./Images/各事業別裁罰Top5.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ii.&nbsp;
 各公司裁處情形類型分析</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。</p>
 
 <p><img src="./Images/各公司裁處情形類型分析.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+iii.&nbsp;
+財罰與營運資訊揭露</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
-lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>財罰與營運資訊揭露</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;與外部網站整合取得各公司當季稅純益資訊，希望藉由此數據瞭解裁罰金額與利潤之關係，部分企業對於裁罰情形不痛不癢，藉由此部分希望省思裁罰金額與企業責任之道德觀。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
-"新細明體",serif'>與外部網站整合取得各公司當季稅純益資訊，希望藉由此數據瞭解裁罰金額與利潤之關係，部分企業對於裁罰情形不痛不癢，藉由此部分希望省思裁罰金額與企業責任之道德觀。</span></p>
+<p><img src="./Images/裁罰與營運資訊揭露.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+<p>丙、 <span style='font-family:"新細明體",serif;color:red'>水汙染為本專案之重點</span>，由於不同河川有其所屬流域和管制範圍，河川水體本身亦有不同等級，因此對於每一個管制流域探討其常發生裁處之公司事業類別，以及裁處事實之時間分析和河川水質情形，一共設計三種頁面，其中河川水質情形可有不同的水質檢測項目進行探討。</p>
 
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
-lang=EN-US>丙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
-style='font-family:"新細明體",serif;color:red'>水汙染為本專案之重點</span><span
-style='font-family:"新細明體",serif'>，由於不同河川有其所屬流域和管制範圍，河川水體本身亦有不同等級，因此對於每一個管制流域探討其常發生裁處之公司事業類別，以及裁處事實之時間分析和河川水質情形，一共設計三種頁面，其中河川水質情形可有不同的水質檢測項目進行探討。</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i.&nbsp;
+水汙染裁罰案件與事業別分析</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
-lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>水汙染裁罰案件與事業別分析</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依據公司坐落位置和水汙染排放之流域進行分析，以視覺化方式呈現不同流域常發生裁罰事實之事業別和座落位置，以強化稽查效率。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
-"新細明體",serif'>依據公司坐落位置和水汙染排放之流域進行分析，以視覺化方式呈現不同流域常發生裁罰事實之事業別和座落位置，以強化稽查效率。</span></p>
+<p><img src="./Images/水汙染裁罰案件與事業別分析水汙染裁罰案件與時間分析.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ii.&nbsp;
+水汙染裁罰案件與時間分析</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
-lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>水汙染裁罰案件與時間分析</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以視覺化方式呈現各流域在不同時間點之裁處數據和月份分析，將稽查重點放在過去常發生之裁處地區和月份，提升稽查人員之效率。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
-"新細明體",serif'>以視覺化方式呈現各流域在不同時間點之裁處數據和月份分析，將稽查重點放在過去常發生之裁處地區和月份，提升稽查人員之效率。</span></p>
-
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+<p><img src="./Images/水汙染裁罰案件與時間分析.png" width="100%" /></p>
 
 <p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
 lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

@@ -30,15 +30,15 @@ i.&nbsp;
 
 <p class=MsoListParagraph style='margin-left:72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+<p><img src="./Images/各事業別裁罰Top5.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
-lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>各公司裁處情形類型分析</span></p>
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ii.&nbsp;
+各公司裁處情形類型分析</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
-"新細明體",serif'>同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。</span></p>
+<p class=MsoListParagraph style='margin-left:72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。</p>
+
+<p><img src="./Images/各公司裁處情形類型分析.png" width="100%" /></p>
 
 <p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
 

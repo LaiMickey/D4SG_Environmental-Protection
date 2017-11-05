@@ -16,9 +16,7 @@
 
 ## 系統構想
 
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
-lang=EN-US>甲、<span style='font:7.0pt "Times New Roman"'> </span></span><span
-style='font-family:"新細明體",serif'>由於環保署提供之基本資料較為詳細，如下圖所示，因此，首先篩選列管類別為水汙染之公司，藉由管制編號視為key值，將環保局內部資料之流域別進行join整合，賦予每一家管制公司排放汙水之流域別，並進行地址對位geocoding。</p>
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'>甲、 由於環保署提供之基本資料較為詳細，如下圖所示，因此，首先篩選列管類別為水汙染之公司，藉由管制編號視為key值，將環保局內部資料之流域別進行join整合，賦予每一家管制公司排放汙水之流域別，並進行地址對位geocoding。</p>
   
 <p><img src="./Images/環保署基本資料.png" width="100%" /></p>
 

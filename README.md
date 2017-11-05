@@ -5,7 +5,7 @@
 
 ## Power BI(https://goo.gl/81wqnm)
 
-<p>使用經驗分享：<a href="./PowerBIGeneralTips.md" title="Title">PowerBIGeneralTips.md</a></p>
+### 使用經驗分享：<a href="https://laimickey.github.io/D4SG_Environmental-Protection/PowerBIGeneralTips" title="Title">PowerBIGeneralTips.md</a>
 
 <iframe width="1024" height="768" src="https://goo.gl/81wqnm" frameborder="0" allowfullscreen></iframe>
 

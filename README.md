@@ -238,3 +238,11 @@ ii.&nbsp;
 <p>
 iii.&nbsp;
 現有水質監測點以河川支流中心點與出海口為主，無法有效掌握即時廢水排放情形，未來應增加即時監控設備才有助於嚇阻企業之汙水排放。</p>
+
+
+## 慶功宴
+
+<p><img src="./Picture/S__15384585.jpg" width="100%" /></p>
+<p><img src="./Picture/S__15384586.jpg" width="100%" /></p>
+<p><img src="./Picture/S__18989072.jpg" width="100%" /></p>
+<p><img src="./Picture/S__18989073.jpg" width="100%" /></p>

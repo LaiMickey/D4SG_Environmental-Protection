@@ -22,8 +22,8 @@ style='font-family:"新細明體",serif'>由於環保署提供之基本資料較
 
 <p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'>乙、我們設計<b><span style='color:red'>以局處整體的角度思考設計三個頁面</span></b>，瞭解局處內部之裁處情形以及各公司裁處狀況。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-i.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+i.&nbsp;&nbsp;&nbsp;&nbsp;
 各事業別TOP5裁罰公司</p>
 
 <p class=MsoListParagraph style='margin-left:72.0pt'>以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。</p>

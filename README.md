@@ -16,19 +16,110 @@
 
 ## 系統構想
 
-甲、由於環保署提供之基本資料較為詳細，如下圖所示，因此，首先篩選列管類別為水汙染之公司，藉由管制編號視為key值，將環保局內部資料之流域別進行join整合，賦予每一家管制公司排放汙水之流域別，並進行地址對位geocoding。  
-<img src="./Images/環保署基本資料.png" width="100%" />
-乙、我們設計以局處整體的角度思考設計三個頁面，瞭解局處內部之裁處情形以及各公司裁處狀況。  
-  i.各事業別TOP5裁罰公司  
-    以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。
-<img src="./Images/各事業別裁罰Top5.png" width="100%" />
-  ii.各公司裁處情形類型分析  
-    同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。
-<img src="./Images/各公司裁處情形類型分析.png" width="100%" />
-  iii.財罰與營運資訊揭露  <br /> 
-    與外部網站整合取得各公司當季稅純益資訊，希望藉由此數據瞭解裁罰金額與利潤之關係，部分企業對於裁罰情形不痛不癢，藉由此部分希望省思裁罰金額與企業責任之道德觀。
-<img src="./Images/裁罰與營運資訊揭露.png" width="100%" />
-丙、水汙染為本專案之重點，由於不同河川有其所屬流域和管制範圍，河川水體本身亦有不同等級，因此對於每一個管制流域探討其常發生裁處之公司事業類別，以及裁處事實之時間分析和河川水質情形，一共設計三種頁面，其中河川水質情形可有不同的水質檢測項目進行探討。
+<p class=MsoListParagraph style='margin-left:24.0pt;text-indent:-24.0pt'><span
+lang=EN-US>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>系統構想</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>甲、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif'>由於環保署提供之基本資料較為詳細，如下圖所示，因此，首先篩選列管類別為水汙染之公司，藉由管制編號視為</span><span
+lang=EN-US>key</span><span style='font-family:"新細明體",serif'>值，將環保局內部資料之流域別進行</span><span
+lang=EN-US>join</span><span style='font-family:"新細明體",serif'>整合，賦予每一家管制公司排放汙水之流域別，並進行地址對位</span><span
+lang=EN-US>geocoding</span><span style='font-family:"新細明體",serif'>。</span></p>
+
+<p class=MsoListParagraph><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>乙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif'>我們設計<b><span style='color:red'>以局處整體的角度思考設計三個頁面</span></b>，瞭解局處內部之裁處情形以及各公司裁處狀況。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>各事業別</span><span
+lang=EN-US>TOP5</span><span style='font-family:"新細明體",serif'>裁罰公司</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>以各科室之管制事業進行統計，計算出該時間點發生裁處事實之前五名公司，藉此督促相關單位進行監督。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>各公司裁處情形類型分析</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>同一間公司當發生水汙然時亦有可能同時伴隨空氣汙染，此介面希望關聯各科室間的橫向溝通，當一單位發生空氣汙染時，可立即協調另一單位進行訪視。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>財罰與營運資訊揭露</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>與外部網站整合取得各公司當季稅純益資訊，希望藉由此數據瞭解裁罰金額與利潤之關係，部分企業對於裁罰情形不痛不癢，藉由此部分希望省思裁罰金額與企業責任之道德觀。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>丙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif;color:red'>水汙染為本專案之重點</span><span
+style='font-family:"新細明體",serif'>，由於不同河川有其所屬流域和管制範圍，河川水體本身亦有不同等級，因此對於每一個管制流域探討其常發生裁處之公司事業類別，以及裁處事實之時間分析和河川水質情形，一共設計三種頁面，其中河川水質情形可有不同的水質檢測項目進行探討。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>i.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>水汙染裁罰案件與事業別分析</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>依據公司坐落位置和水汙染排放之流域進行分析，以視覺化方式呈現不同流域常發生裁罰事實之事業別和座落位置，以強化稽查效率。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>ii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>水汙染裁罰案件與時間分析</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>以視覺化方式呈現各流域在不同時間點之裁處數據和月份分析，將稽查重點放在過去常發生之裁處地區和月份，提升稽查人員之效率。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
+lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>裁罰案件與水質分析</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
+"新細明體",serif'>由於不同流域之河川水體等級不同，以及流域中對於水汙染排放後指數之敏感度不同，因此，此頁面以地圖搭配監測點的方式呈現，由內部具有水質高度敏感度之人員，藉由水質波動數據觀察是否有裁處的情形，從上中下游數據之觀察，以及不同流域常發生裁處事實之事業別應該觀測那些水質數據。</span></p>
+
+<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:24.0pt;text-indent:-24.0pt'><span
+lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"新細明體",serif'>資料限制和建議</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>甲、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif'>環保署基本資料提供地址資料，建議可開放內部已完成</span><span
+lang=EN-US>geocoding</span><span style='font-family:"新細明體",serif'>之坐標資料，並加上流域別欄位讓使用者利於辨識使用。</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>乙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif'>水質數據為每月僅監測一次且檢測時間間格為</span><span lang=EN-US>30</span><span
+style='font-family:"新細明體",serif'>天一次，對於意圖排放汙水之企業並無實質監控效果，且當樣本數多時，水質數據對於監測情形才有顯著幫助。</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt'><span lang=EN-US>&nbsp;</span></p>
+
+<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
+lang=EN-US>丙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
+style='font-family:"新細明體",serif'>現有水質監測點以河川支流中心點與出海口為主，無法有效掌握即時廢水排放情形，未來應增加即時監控設備才有助於嚇阻企業之汙水排放。</span></p>
 
 
 ## 資料處理步驟(爬網時請控制程式執行頻率，不要影響目標網站正常營運!!!)

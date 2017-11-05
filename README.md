@@ -54,7 +54,7 @@ i.&nbsp;
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;依據公司坐落位置和水汙染排放之流域進行分析，以視覺化方式呈現不同流域常發生裁罰事實之事業別和座落位置，以強化稽查效率。</p>
 
-<p><img src="./Images/水汙染裁罰案件與事業別分析水汙染裁罰案件與時間分析.png" width="100%" /></p>
+<p><img src="./Images/水汙染裁罰案件與事業別分析.png" width="100%" /></p>
 
 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ii.&nbsp;
@@ -64,37 +64,13 @@ ii.&nbsp;
 
 <p><img src="./Images/水汙染裁罰案件與時間分析.png" width="100%" /></p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt;text-indent:-72.0pt'><span
-lang=EN-US><span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span>iii.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>裁罰案件與水質分析</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+iii.&nbsp;
+裁罰案件與水質分析</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span style='font-family:
-"新細明體",serif'>由於不同流域之河川水體等級不同，以及流域中對於水汙染排放後指數之敏感度不同，因此，此頁面以地圖搭配監測點的方式呈現，由內部具有水質高度敏感度之人員，藉由水質波動數據觀察是否有裁處的情形，從上中下游數據之觀察，以及不同流域常發生裁處事實之事業別應該觀測那些水質數據。</span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由於不同流域之河川水體等級不同，以及流域中對於水汙染排放後指數之敏感度不同，因此，此頁面以地圖搭配監測點的方式呈現，由內部具有水質高度敏感度之人員，藉由水質波動數據觀察是否有裁處的情形，從上中下游數據之觀察，以及不同流域常發生裁處事實之事業別應該觀測那些水質數據。</p>
 
-<p class=MsoListParagraph style='margin-left:72.0pt'><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoListParagraph><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-left:24.0pt;text-indent:-24.0pt'><span
-lang=EN-US>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</span></span><span style='font-family:"新細明體",serif'>資料限制和建議</span></p>
-
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
-lang=EN-US>甲、<span style='font:7.0pt "Times New Roman"'> </span></span><span
-style='font-family:"新細明體",serif'>環保署基本資料提供地址資料，建議可開放內部已完成</span><span
-lang=EN-US>geocoding</span><span style='font-family:"新細明體",serif'>之坐標資料，並加上流域別欄位讓使用者利於辨識使用。</span></p>
-
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
-lang=EN-US>乙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
-style='font-family:"新細明體",serif'>水質數據為每月僅監測一次且檢測時間間格為</span><span lang=EN-US>30</span><span
-style='font-family:"新細明體",serif'>天一次，對於意圖排放汙水之企業並無實質監控效果，且當樣本數多時，水質數據對於監測情形才有顯著幫助。</span></p>
-
-<p class=MsoListParagraph style='margin-left:48.0pt'><span lang=EN-US>&nbsp;</span></p>
-
-<p class=MsoListParagraph style='margin-left:48.0pt;text-indent:-24.0pt'><span
-lang=EN-US>丙、<span style='font:7.0pt "Times New Roman"'> </span></span><span
-style='font-family:"新細明體",serif'>現有水質監測點以河川支流中心點與出海口為主，無法有效掌握即時廢水排放情形，未來應增加即時監控設備才有助於嚇阻企業之汙水排放。</span></p>
+<p><img src="./Images/裁罰案件與水質分析.png" width="100%" /></p>
 
 
 ## 資料處理步驟(爬網時請控制程式執行頻率，不要影響目標網站正常營運!!!)
